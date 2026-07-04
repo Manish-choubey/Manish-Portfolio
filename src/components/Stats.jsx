@@ -3,10 +3,10 @@ import { motion, useInView } from 'framer-motion'
 import { HiBriefcase, HiCode, HiAcademicCap, HiHeart } from 'react-icons/hi'
 
 const stats = [
-  { icon: HiBriefcase, value: 4, suffix: '+', label: 'Years Experience' },
-  { icon: HiCode, value: 25, suffix: '+', label: 'Projects Completed' },
-  { icon: HiAcademicCap, value: 10, suffix: '+', label: 'Technologies' },
-  { icon: HiHeart, value: 100, suffix: '%', label: 'Passion for Code' },
+  { icon: HiBriefcase, value: 3, suffix: '+', label: 'Years Experience' },
+  { icon: HiCode, value: 10000, suffix: '+', label: 'Concurrent Users Served' },
+  { icon: HiAcademicCap, value: 80, suffix: '%+', label: 'Owned Service Test Coverage' },
+  { icon: HiHeart, value: 35, suffix: '%', label: 'Bundle Size Reduction' },
 ]
 
 function AnimatedCounter({ value, suffix, inView }) {
@@ -34,7 +34,7 @@ function AnimatedCounter({ value, suffix, inView }) {
 
   return (
     <span>
-      {count}
+      {count.toLocaleString('en-IN')}
       {suffix}
     </span>
   )

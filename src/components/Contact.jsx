@@ -1,18 +1,19 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { HiMail, HiLocationMarker, HiPhone } from 'react-icons/hi'
-import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { SiLeetcode } from 'react-icons/si'
 
 const contactInfo = [
-  { icon: HiMail, label: 'Email', value: 'hello@example.com', href: 'mailto:hello@example.com' },
+  { icon: HiMail, label: 'Email', value: 'manishchoubey7071@gmail.com', href: 'mailto:manishchoubey7071@gmail.com' },
   { icon: HiLocationMarker, label: 'Location', value: 'India', href: null },
-  { icon: HiPhone, label: 'Phone', value: '+91 98765 43210', href: 'tel:+919876543210' },
+  { icon: HiPhone, label: 'Phone', value: '+91 62038 78051', href: 'tel:+916203878051' },
 ]
 
 const socialLinks = [
-  { icon: FaGithub, href: 'https://github.com', label: 'GitHub' },
-  { icon: FaLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
-  { icon: FaTwitter, href: 'https://twitter.com', label: 'Twitter' },
+  { icon: FaGithub, href: 'https://github.com/Manish-choubey', label: 'GitHub' },
+  { icon: FaLinkedin, href: 'https://www.linkedin.com/in/manish-choubey-3555b4181/', label: 'LinkedIn' },
+  { icon: SiLeetcode, href: 'https://leetcode.com/manishchoubey7071/', label: 'LeetCode' },
 ]
 
 export default function Contact() {
@@ -44,7 +45,7 @@ export default function Contact() {
         >
           <h2 className="section-title">Get In Touch</h2>
           <p className="section-subtitle">
-            Have a project in mind? Let's build something amazing together.
+            Have a role, product, or engineering problem in mind? Let's talk.
           </p>
         </motion.div>
 

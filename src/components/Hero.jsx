@@ -1,14 +1,14 @@
 import { motion } from 'framer-motion'
 import { HiArrowDown, HiCode, HiDownload } from 'react-icons/hi'
 import { FaReact, FaNodeJs } from 'react-icons/fa'
-import { SiMongodb, SiExpress } from 'react-icons/si'
+import { SiMongodb, SiNextdotjs } from 'react-icons/si'
 import TypingEffect from './TypingEffect'
 
 const techIcons = [
   { Icon: FaReact, label: 'React', delay: 0 },
-  { Icon: FaNodeJs, label: 'Node.js', delay: 0.1 },
-  { Icon: SiMongodb, label: 'MongoDB', delay: 0.2 },
-  { Icon: SiExpress, label: 'Express', delay: 0.3 },
+  { Icon: SiNextdotjs, label: 'Next.js', delay: 0.1 },
+  { Icon: FaNodeJs, label: 'Node.js', delay: 0.2 },
+  { Icon: SiMongodb, label: 'MongoDB', delay: 0.3 },
 ]
 
 export default function Hero() {
@@ -51,7 +51,7 @@ export default function Hero() {
           className="hero-badge"
         >
           <HiCode className="hero-badge-icon" />
-          <span>MERN Stack Developer</span>
+          <span>Full-Stack Developer</span>
         </motion.div>
 
         <motion.h1
@@ -71,8 +71,8 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="hero-desc"
         >
-          I craft scalable web applications with MongoDB, Express, React & Node.js.
-          Turning ideas into performant, user-centric digital experiences.
+          I build scalable SaaS and enterprise applications with MERN, Next.js,
+          TypeScript, GraphQL, and cloud-ready infrastructure.
         </motion.p>
 
         <motion.div

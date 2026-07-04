@@ -1,49 +1,27 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { HiExternalLink, HiCode, HiX } from 'react-icons/hi'
+import { HiExternalLink, HiX } from 'react-icons/hi'
 
-const allTech = ['All', 'React', 'Node.js', 'MongoDB', 'Express', 'Redux', 'Socket.io', 'Stripe', 'Chart.js', 'JWT']
+const allTech = ['All', 'React', 'Next.js', 'Node.js', 'MongoDB', 'Redux', 'TypeScript', 'Express', 'OAuth']
 
 const projects = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
-    desc: 'Full-featured e-commerce with cart, checkout, payment integration, and admin dashboard.',
-    longDesc: 'A complete e-commerce solution built from scratch. Features include product catalog, shopping cart, Stripe payment integration, order management, and a comprehensive admin dashboard for inventory and analytics.',
-    tech: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Redux'],
-    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
-    live: '#',
-    github: '#',
+    title: 'NXGEN Scale Drivers',
+    desc: 'Enterprise IoT and video surveillance dashboard for managing 1,000+ connected devices.',
+    longDesc: 'Contributed frontend development for a cloud-based platform managing IoT devices, cameras, and audio sensors through a unified dashboard. Built typed React components, modeled complex device-state interfaces, used Redux Toolkit for app-wide state, and applied lazy loading plus code splitting to improve Time-to-Interactive by about 35%.',
+    tech: ['Next.js', 'React', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'Redux', 'OAuth'],
+    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=900&h=560&fit=crop',
+    live: 'https://nxgen.io/',
   },
   {
     id: 2,
-    title: 'Task Management App',
-    desc: 'Real-time collaborative task manager with drag-drop, teams, and activity tracking.',
-    longDesc: 'Real-time collaborative platform with WebSocket integration. Users can create boards, assign tasks, drag-and-drop between columns, and track team activity with live updates.',
-    tech: ['React', 'Express', 'MongoDB', 'Socket.io', 'JWT'],
-    image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
-    live: '#',
-    github: '#',
-  },
-  {
-    id: 3,
-    title: 'Social Media Dashboard',
-    desc: 'Analytics dashboard with charts, user management, and content scheduling.',
-    longDesc: 'Comprehensive analytics platform with interactive charts, user segmentation, content scheduling, and performance metrics. Built with Chart.js for data visualization.',
-    tech: ['React', 'Node.js', 'PostgreSQL', 'Chart.js', 'REST API'],
-    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
-    live: '#',
-    github: '#',
-  },
-  {
-    id: 4,
-    title: 'Blog CMS',
-    desc: 'Headless CMS for blogs with markdown support, SEO, and comment system.',
-    longDesc: 'Modern headless CMS with markdown editor, SEO optimization, comment system with moderation, and RESTful API for content delivery to any frontend.',
-    tech: ['React', 'Express', 'MongoDB', 'Markdown', 'Auth0'],
-    image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&h=400&fit=crop',
-    live: '#',
-    github: '#',
+    title: 'Zunia',
+    desc: 'School management SaaS platform with attendance, marks, and report generation services.',
+    longDesc: 'Built core backend microservices in Node.js for attendance, marks, and report generation modules serving multiple school tenants. Added unit tests around grade computation and attendance percentage logic, reaching 80%+ coverage on owned services, and collaborated across Node.js, Java Spring Boot, and .NET services through a shared API contract.',
+    tech: ['React', 'Node.js', 'MongoDB', 'Redux', 'JavaScript'],
+    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=900&h=560&fit=crop',
+    live: 'https://educationhorizons.com/solutions/zunia/',
   },
 ]
 
@@ -61,11 +39,8 @@ function ProjectCard({ project, index, onOpen }) {
         <div className="project-image">
           <img src={project.image} alt={project.title} loading="lazy" />
           <div className="project-overlay">
-            <a href={project.live} className="project-link" title="Live Demo" onClick={(e) => e.stopPropagation()}>
+            <a href={project.live} className="project-link" title="Product Link" onClick={(e) => e.stopPropagation()} target="_blank" rel="noopener noreferrer">
               <HiExternalLink />
-            </a>
-            <a href={project.github} className="project-link" title="Source Code" onClick={(e) => e.stopPropagation()}>
-              <HiCode />
             </a>
             <button
               className="project-link project-link-details"
@@ -118,7 +93,7 @@ export default function Projects() {
         >
           <h2 className="section-title">Featured Projects</h2>
           <p className="section-subtitle">
-            A selection of projects showcasing my MERN stack expertise
+            Resume-backed projects across IoT, video surveillance, and school management SaaS
           </p>
         </motion.div>
 
@@ -139,10 +114,7 @@ export default function Projects() {
           ))}
         </motion.div>
 
-        <motion.div
-          className="projects-grid"
-          layout
-        >
+        <motion.div className="projects-grid" layout>
           <AnimatePresence mode="popLayout">
             {filteredProjects.map((project, i) => (
               <ProjectCard
@@ -191,11 +163,8 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="modal-actions">
-                  <a href={modalProject.live} className="btn btn-primary">
-                    <HiExternalLink /> Live Demo
-                  </a>
-                  <a href={modalProject.github} className="btn btn-outline">
-                    <HiCode /> Source Code
+                  <a href={modalProject.live} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    <HiExternalLink /> Product Link
                   </a>
                 </div>
               </div>

@@ -26,7 +26,7 @@ export default function Navbar({ scrolled }) {
       <div className="container navbar-inner">
         <a href="#home" className="logo">
           <span className="logo-bracket">&lt;</span>
-          <span className="logo-text">Dev</span>
+          <span className="logo-text">Manish</span>
           <span className="logo-bracket">/&gt;</span>
         </a>
 

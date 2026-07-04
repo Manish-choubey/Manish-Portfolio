@@ -4,18 +4,18 @@ import { HiLightningBolt, HiCode, HiCube } from 'react-icons/hi'
 const highlights = [
   {
     icon: HiCode,
-    title: 'Clean Code',
-    desc: 'Writing maintainable, scalable code with best practices and design patterns.',
+    title: 'SaaS Delivery',
+    desc: '3+ years shipping scalable SaaS and enterprise products across frontend, backend, and APIs.',
   },
   {
     icon: HiCube,
-    title: 'Full-Stack',
-    desc: 'End-to-end development from database design to polished UI/UX.',
+    title: 'System Ownership',
+    desc: 'Comfortable owning features end-to-end, from API design and database models to responsive UI.',
   },
   {
     icon: HiLightningBolt,
-    title: 'Performance',
-    desc: 'Optimized applications for speed, SEO, and seamless user experience.',
+    title: 'Performance Focus',
+    desc: 'Improved API response time, bundle size, rendering performance, and query throughput in production apps.',
   },
 ]
 
@@ -32,7 +32,7 @@ export default function About() {
         >
           <h2 className="section-title">About Me</h2>
           <p className="section-subtitle">
-            Passionate developer building the web, one line at a time
+            Full-stack engineer focused on reliable, maintainable product systems
           </p>
         </motion.div>
 
@@ -60,14 +60,16 @@ export default function About() {
             className="about-content"
           >
             <p className="about-text">
-              I'm a MERN Stack Developer with a passion for building robust, scalable web applications.
-              My journey in web development has equipped me with expertise across the entire stack —
-              from designing MongoDB schemas to crafting responsive React interfaces.
+              I'm Manish Choubey, a Full-Stack Developer with 3+ years of experience
+              designing and shipping scalable SaaS and enterprise applications. I work
+              across the MERN stack, Next.js, TypeScript, GraphQL, and cloud-ready
+              infrastructure.
             </p>
             <p className="about-text">
-              I thrive on solving complex problems and turning ideas into production-ready solutions.
-              Whether it's RESTful APIs, real-time features, or pixel-perfect UIs, I bring dedication
-              and attention to detail to every project.
+              My work includes reusable React component systems, REST and GraphQL APIs,
+              MongoDB optimization, WebSocket-powered real-time features, JWT auth, and
+              CI/CD workflows. I like building clean systems that stay understandable as
+              teams and products grow.
             </p>
 
             <div className="about-highlights">

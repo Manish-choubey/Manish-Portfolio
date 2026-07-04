@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react'
 
 const phrases = [
   'Full-Stack Developer',
-  'MERN Stack Developer',
-  'React Enthusiast',
-  'Node.js Developer',
+  'MERN + Next.js Developer',
+  'TypeScript Engineer',
+  'API & SaaS Builder',
   'Problem Solver',
 ]
 

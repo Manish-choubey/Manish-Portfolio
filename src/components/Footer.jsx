@@ -13,11 +13,11 @@ export default function Footer() {
       <div className="container footer-inner">
         <div className="footer-brand">
           <span className="logo-bracket">&lt;</span>
-          <span className="logo-text">Dev</span>
+          <span className="logo-text">Manish</span>
           <span className="logo-bracket">/&gt;</span>
         </div>
         <p className="footer-text">
-          Built with React • Designed for the web
+          Full-Stack Developer - MERN, Next.js, TypeScript, and cloud-ready systems
         </p>
         <div className="footer-links">
           <a href="#home">Home</a>
@@ -26,7 +26,7 @@ export default function Footer() {
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
-        <p className="footer-copy">© {year} All rights reserved.</p>
+        <p className="footer-copy">&copy; {year} Manish Choubey. All rights reserved.</p>
       </div>
     </motion.footer>
   )
